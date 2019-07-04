@@ -5,3 +5,57 @@ html {
 *, *:before, *:after{
 	box-sizing: inherit;
 }
+
+ul, li{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	cursor: pointer;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.header {
+	background-image: url(../images/06.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 1200px;
+}
+
+.head-left{
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 40%;
+	height: 1200PX;
+	position: relative;
+}
+
+.head-left ul{
+	color: rgb(158, 158, 158);	
+	list-style: none;
+	position: absolute;
+	right: 0;
+}
+
+.head-left ul li{
+
+}
+
+.head-left li a{
+	width: 100%;
+	padding: 20px;
+	display: block;
+}
+
+.head-left li a:hover{
+	color: white;
+}
+
+
+
+
