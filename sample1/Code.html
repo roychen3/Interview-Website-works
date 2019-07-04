@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <title>Coding web design</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/Code/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+		function showsubs(){
+			if (document.getElementsByClassName("subs")[0].style.visibility == "visible"){
+				document.getElementsByClassName("subs")[0].style.visibility="hidden";
+			}
+			else {
+				document.getElementsByClassName("subs")[0].style.visibility="visible";
+			}
+        }
+        
+        function showTop() {
+            var h = document.body.scrollHeight * 0.3;
+            var ToTop = window.scrollY;
+
+            if(ToTop >= h){
+                document.getElementById("goTop").style.visibility="visible";
+            }
+            else {
+                document.getElementById("goTop").style.visibility="hidden";
+            }            
+        }
+
+    </script>
+    
+    
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	  <![endif]-->
+</head>
+<body onscroll="showTop()">
+	<header class="header" id="top">
+		<div class="container header-inner">
+			<div class="title"><a href="index.html">ROY<span class="small"></span></a></div>
+			<nav id="header-menu">
+				<ul class="small-menu" >
+					<li>
+						<a onclick="showsubs()">&#9776;</a>
+						<ul class="subs">
+							<li><a href="PL.html">Python</a></li>
+							<li><a href="">C#</a></li>
+							<li><a href="">SQL</a></li>
+						</ul>
+					</li>
+				</ul>
+
+                <ul class="normal-menu">
+					<li><a href="PL.html">Python</a></li>
+				    <li><a href="">C#</a></li>
+					<li><a href="">SQL</a></li>
+                </ul>
+            </nav>
+		</div>		
+    </header>
+    
+	<div class="main">
+		<div class="container main-inner">
+			<div class="title"><h1>[python]利用pytube下載Youtube影片</h1></div>
+			<div class="content">
+                <p>輸入指令下載『pytube』套件(此範例版本為 9.3.3)</p>
+                <pre><code>pip install -v  pytube==9.3.3</code></pre>
+                
+                <p>只要四行程式碼就可以下載一部youtube影片</p>
+                <pre><code>
+                        from pytube import YouTube
+
+
+
+                        yt = YouTube('https://www.youtube.com/watch?v=9bZkp7q19f0')
+                        stream = yt.streams.first()
+                        stream.download('下載路徑')
+                        
+                </code></pre>
+                
+                <p>來看看所有可以下載的項目</p>
+                <pre><code>
+                    print(yt.streams.all())
+                </code></pre>
+                <p class="print">
+                    [&#x3C;Stream: itag=&#x22;22&#x22; mime_type=&#x22;video/mp4&#x22; res=&#x22;720p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;avc1.64001F&#x22; acodec=&#x22;mp4a.40.2&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;43&#x22; mime_type=&#x22;video/webm&#x22; res=&#x22;360p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;vp8.0&#x22; acodec=&#x22;vorbis&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;18&#x22; mime_type=&#x22;video/mp4&#x22; res=&#x22;360p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;avc1.42001E&#x22; acodec=&#x22;mp4a.40.2&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;36&#x22; mime_type=&#x22;video/3gpp&#x22; res=&#x22;240p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;mp4v.20.3&#x22; acodec=&#x22;mp4a.40.2&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;17&#x22; mime_type=&#x22;video/3gpp&#x22; res=&#x22;144p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;mp4v.20.3&#x22; acodec=&#x22;mp4a.40.2&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;137&#x22; mime_type=&#x22;video/mp4&#x22; res=&#x22;1080p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;avc1.640028&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;136&#x22; mime_type=&#x22;video/mp4&#x22; res=&#x22;720p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;avc1.4d401f&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;135&#x22; mime_type=&#x22;video/mp4&#x22; res=&#x22;480p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;avc1.4d401f&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;134&#x22; mime_type=&#x22;video/mp4&#x22; res=&#x22;360p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;avc1.4d401e&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;133&#x22; mime_type=&#x22;video/mp4&#x22; res=&#x22;240p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;avc1.4d4015&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;160&#x22; mime_type=&#x22;video/mp4&#x22; res=&#x22;144p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;avc1.4d400c&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;140&#x22; mime_type=&#x22;audio/mp4&#x22; abr=&#x22;128kbps&#x22; acodec=&#x22;mp4a.40.2&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;171&#x22; mime_type=&#x22;audio/webm&#x22; abr=&#x22;128kbps&#x22; acodec=&#x22;vorbis&#x22;&#x3E;]
+                </p>
+
+                <p>有聲音的影片項目</p>
+                <pre><code>
+                    print(yt.streams.filter(progressive=True).all())
+                </code></pre>
+                <p class="print">
+                    [&#x3C;Stream: itag=&#x22;22&#x22; mime_type=&#x22;video/mp4&#x22; res=&#x22;720p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;avc1.64001F&#x22; acodec=&#x22;mp4a.40.2&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;43&#x22; mime_type=&#x22;video/webm&#x22; res=&#x22;360p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;vp8.0&#x22; acodec=&#x22;vorbis&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;18&#x22; mime_type=&#x22;video/mp4&#x22; res=&#x22;360p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;avc1.42001E&#x22; acodec=&#x22;mp4a.40.2&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;36&#x22; mime_type=&#x22;video/3gpp&#x22; res=&#x22;240p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;mp4v.20.3&#x22; acodec=&#x22;mp4a.40.2&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;17&#x22; mime_type=&#x22;video/3gpp&#x22; res=&#x22;144p&#x22; fps=&#x22;30fps&#x22; vcodec=&#x22;mp4v.20.3&#x22; acodec=&#x22;mp4a.40.2&#x22;&#x3E;]
+                </p>
+
+                <p>只有聲音的項目</p>
+                <pre><code>
+                    print(yt.streams.filter(only_audio=True).all())
+                </code></pre>
+                <p class="print">
+                    [&#x3C;Stream: itag=&#x22;140&#x22; mime_type=&#x22;audio/mp4&#x22; abr=&#x22;128kbps&#x22; acodec=&#x22;mp4a.40.2&#x22;&#x3E;,
+                    &#x3C;Stream: itag=&#x22;171&#x22; mime_type=&#x22;audio/webm&#x22; abr=&#x22;128kbps&#x22; acodec=&#x22;vorbis&#x22;&#x3E;]
+                </p>
+                
+                <p>只有影片的項目(有可能會下載到無聲音)</p>
+                <pre><code>
+                    print(yt.streams.filter(only_video=True).all())
+                </code></pre>
+                <p class="print">
+                    
+                </p>
+
+                
+                
+            </div>
+        </div>
+        <div id="goTop"><a href="#top">⇪</a></div>
+        
+    </div>
+
+	<footer class="footer">
+		<div class="container footer-inner">
+			<div class="Introduction"><a href="Introduction.html">個人簡介</a></div>
+		</div>
+	</footer>
+
+</body>
+</html>

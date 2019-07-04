@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <title>Coding web design</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/PL/style.css">
+	<script>
+		function showTop() {
+            var h = document.body.scrollHeight * 0.3;
+            var ToTop = window.scrollY;
+
+            if(ToTop >= h){
+                document.getElementById("goTop").style.visibility="visible";
+            }
+            else {
+                document.getElementById("goTop").style.visibility="hidden";
+            }            
+        }
+		
+
+		function showsubs(){
+			if (document.getElementsByClassName("subs")[0].style.visibility == "visible"){
+				document.getElementsByClassName("subs")[0].style.visibility="hidden";
+			}
+			else {
+				document.getElementsByClassName("subs")[0].style.visibility="visible";
+			}
+		}
+	</script>
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	  <![endif]-->
+</head>
+<body onscroll="showTop()">
+	<header class="header" id="top">
+		<div class="container header-inner">
+			<div class="title"><a href="index.html">ROY<span class="small"></span></a></div>
+			<nav id="header-menu">
+				<ul class="small-menu" >
+					<li>
+						<a onclick="showsubs()">&#9776;</a>
+						<ul class="subs">
+							<li><a href="PL.html">Python</a></li>
+							<li><a href="">C#</a></li>
+							<li><a href="">SQL</a></li>
+						</ul>
+					</li>
+				</ul>
+
+                <ul class="normal-menu">
+					<li><a href="PL.html">Python</a></li>
+				    <li><a href="">C#</a></li>
+					<li><a href="">SQL</a></li>
+                </ul>
+            </nav>
+		</div>		
+	</header>
+
+	<img id="bg" src="images/01_2.jpg">
+	<div class="container bg">
+		<img src="images/01_2.jpg">
+		<div class="title">
+			<h1>PYTHON</h1>
+		</div>
+	</div>
+	
+	<div class="main">
+		<div class="container main-inner">
+			<div class="content">
+				<div class="content-box">
+					<div class="title">
+						<h3><a href="Code.html">[python]利用pytube下載Youtube影片</a></h3>
+					</div>
+				</div>
+
+				<div class="content-box">
+					<div class="title">
+						<h3><a href=#>[python]利用BeautifulSoup爬取網頁資訊</a></h3>
+					</div>
+				</div>
+			</div>
+			<div id="goTop"><a href="#top">⇪</a></div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container footer-inner">
+			<div class="Introduction"><a href="Introduction.html">個人簡介</a></div>
+		</div>
+	</footer>
+
+</body>
+</html>
