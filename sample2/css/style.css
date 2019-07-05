@@ -24,38 +24,60 @@ a{
 	background-image: url(../images/06.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
+	background-position: center;
 	width: 100%;
-	height: 1200px;
+	height: 800px;
+	max-height: 800px;
 }
 
 .head-left{
 	background-color: rgba(0, 0, 0, 0.6);
 	width: 40%;
-	height: 1200PX;
+	height: 800PX;
+	max-height: 800px;
 	position: relative;
+	float: left;
 }
 
 .head-left ul{
 	color: rgb(158, 158, 158);	
 	list-style: none;
 	position: absolute;
+	top:50%;
 	right: 0;
-}
-
-.head-left ul li{
-
+	transform: translate(0%,-50%);
 }
 
 .head-left li a{
 	width: 100%;
 	padding: 20px;
 	display: block;
+	text-align: right;
 }
 
 .head-left li a:hover{
 	color: white;
+	font-weight: 900;
 }
 
+.head-right{
+	width:60%;
+	height: 800PX;
+	max-height: 800px;
+	float: left;
+	position: relative;
+}
 
+.head-r-inner{
+	top:50%;
+	left: 0;
+	transform: translate(0%,-50%);
+	position: absolute;
+	padding-left: 20px;
+}
 
-
+.head-right h3,
+.head-right h1 {
+	color: white;
+	font-size: 42px; 
+}
