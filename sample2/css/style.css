@@ -91,9 +91,15 @@ a {
   font-size: 22px;
 }
 
+.main .about {
+	max-height: 720px;
+	overflow: hidden;
+}
+
 .main .about-first,
 .main .about-last {
   width: 40%;
+  height: 720px;
   float: left;
   position: relative;
   padding-top: 80px;
@@ -102,6 +108,7 @@ a {
 .main .about .about-mid {
   float: left;
   width: 20%;
+  height: 720px;
 }
 
 .main .about-inner {
@@ -119,6 +126,7 @@ a {
   background-color: rgb(59, 59, 59);
   padding: 30px;
   margin: -5px 0 0 0;
+  height: 220px;
 }
 
 .main .about .photo .summary .title {
@@ -129,4 +137,18 @@ a {
   background-color: rgb(100, 100, 100);
   padding: 150px 20px;
   color: white;
+}
+
+.main .about-last {
+	background-color: rgb(221, 221, 221);
+	padding-top: 126px;
+}
+
+.main .about-last div{
+	padding: 20px 80px 20px 20px;
+	font-weight: 300;
+}
+
+.main .about-last div:hover{
+	background-color: white;
 }
