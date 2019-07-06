@@ -92,14 +92,14 @@ a {
 }
 
 .main .about {
-	max-height: 720px;
+	max-height: 696px;
 	overflow: hidden;
 }
 
 .main .about-first,
 .main .about-last {
   width: 40%;
-  height: 720px;
+  height: 696px;
   float: left;
   position: relative;
   padding-top: 80px;
@@ -108,7 +108,7 @@ a {
 .main .about .about-mid {
   float: left;
   width: 20%;
-  height: 720px;
+  height: 695px;
 }
 
 .main .about-inner {
@@ -141,6 +141,7 @@ a {
 
 .main .about-last {
 	background-color: rgb(221, 221, 221);
+	overflow: scroll;
 }
 
 .main .about-last h1{
@@ -154,4 +155,27 @@ a {
 
 .main .about-last div:hover{
 	background-color: white;
+}
+
+.main .experience-cover{
+	background-image: url(../images/04_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.main .experience-cover .title{
+	margin: 0;
+	padding: 250px;
+	text-align: center;
+}
+
+.main .experience {
+	background-color: rgb(59, 59, 59);
+}
+
+.main .experience-bkgcl {
+	background-color: white;
+	width: 50%;
+	height: 700px;
 }
