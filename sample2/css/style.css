@@ -92,8 +92,8 @@ a {
 }
 
 .main .about {
-	max-height: 696px;
-	overflow: hidden;
+  max-height: 696px;
+  overflow: hidden;
 }
 
 .main .about-first,
@@ -108,7 +108,7 @@ a {
 .main .about .about-mid {
   float: left;
   width: 20%;
-  height: 695px;
+  height: 696px;
 }
 
 .main .about-inner {
@@ -140,42 +140,88 @@ a {
 }
 
 .main .about-last {
-	background-color: rgb(221, 221, 221);
-	overflow: scroll;
+  background-color: rgb(221, 221, 221);
+  overflow: scroll;
 }
 
-.main .about-last h1{
-	padding-left: 20px;
+.main .about-last h1 {
+  padding-left: 20px;
 }
 
-.main .about-last div{
-	padding: 10px 80px 10px 40px;
-	font-weight: 300;
+.main .about-last div {
+  padding: 10px 80px 10px 40px;
+  font-weight: 300;
 }
 
-.main .about-last div:hover{
-	background-color: white;
+.main .about-last div:hover {
+  background-color: white;
 }
 
-.main .experience-cover{
-	background-image: url(../images/04_2.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+.main .experience-cover {
+  background-image: url(../images/04_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.main .experience-cover .title{
-	margin: 0;
-	padding: 250px;
-	text-align: center;
+.main .experience-cover .title {
+  margin: 0;
+  padding: 200px 0;
+  text-align: center;
 }
 
 .main .experience {
-	background-color: rgb(59, 59, 59);
+  background-color: rgb(59, 59, 59);
+  position: relative;
+  height: 1300px;
 }
 
 .main .experience-bkgcl {
-	background-color: white;
-	width: 50%;
-	height: 700px;
+  background-color: white;
+  width: 50%;
+  height: 1300px;
+}
+
+.main .experience-card {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+}
+
+.main .experience-photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 650px;
+  height: 500px;
+  margin: 100px 0 0 20%;
+  position: relative;
+}
+
+.main .experience .card-arcoa {
+  background-image: url("../images/arcoa.jpg");
+}
+
+.main .experience .card-college {
+	background-image: url("../images/college.jpg");
+}
+  
+
+.main .experience-photo div {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 400px;
+  height: 400px;
+  margin: 50px -200px 0 0;
+  right: 0;
+  position: absolute;
+  padding: 0 20px 20px;
+}
+
+.main .experience-photo .keyWord {
+	font-weight: 300;
+}
+
+.main .experience-photo .content {
+	line-height: 2;
 }
