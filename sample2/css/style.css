@@ -18,12 +18,11 @@ a {
   cursor: pointer;
 }
 
-.clearfix:after {
-	content: '';
-	display:block;
-	clear: both;
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
-
 
 .header {
   background-image: url(../images/06.jpg);
@@ -37,7 +36,7 @@ a {
 
 .head-left {
   background-color: rgba(0, 0, 0, 0.6);
-  width: 35%;
+  width: 40%;
   height: 800px;
   max-height: 800px;
   position: relative;
@@ -66,7 +65,7 @@ a {
 }
 
 .head-right {
-  width: 65%;
+  width: 60%;
   height: 800px;
   max-height: 800px;
   float: left;
@@ -94,29 +93,28 @@ a {
 
 .main .about-first,
 .main .about-last {
-  width: 35%;
+  width: 40%;
   float: left;
   position: relative;
   padding-top: 80px;
 }
 
-.main .about .mid {
+.main .about .about-mid {
   float: left;
-  width: 30%;
+  width: 20%;
 }
 
 .main .about-inner {
-  position: absolute;
-  right: 0;
-}
-.main .about .photo img {
-  width: 270px;
-  height: 320px;
+  max-width: 270px;
+  margin-left: auto;
   overflow: hidden;
 }
 
+.main .about .photo img {
+  width: 270px;
+}
+
 .main .about .photo .summary {
-  max-width: 270px;
   color: white;
   background-color: rgb(59, 59, 59);
   padding: 30px;
@@ -127,4 +125,8 @@ a {
   font-size: 12px;
 }
 
-
+.main .about-mid {
+  background-color: rgb(100, 100, 100);
+  padding: 150px 20px;
+  color: white;
+}
