@@ -173,7 +173,7 @@ a:visited {
 .main .experience-cover .title,
 .main .contact-cover .title {
   margin: 0;
-  padding: 200px 0;
+  padding: 150px 0;
   text-align: center;
 }
 
@@ -246,7 +246,7 @@ a:visited {
   padding: 20px 0;
 }
 
-.main .contact-cover .content ul {
+.main .contact-cover .content .contact-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -254,14 +254,19 @@ a:visited {
   margin: 0 15%;
 }
 
-.main .contact-cover .content ul li {
+.main .contact-cover .content .contact-list li {
   float: left;
   list-style: none;
   min-width: 33%;
+  margin: 20px 0;
 }
 
-.main .contact-cover .content i {
+.main .contact-cover .content .contact-list i {
   font-size: 48px;
   color: rgb(73, 72, 72);
   line-height: 1.2;
 }
+
+.main .contact-cover .content .contact-list p {
+	margin: 0;
+  }
