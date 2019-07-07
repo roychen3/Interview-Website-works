@@ -16,6 +16,11 @@ li {
 
 a {
   cursor: pointer;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
 }
 
 .clearfix::after {
@@ -162,12 +167,13 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /*background-attachment: fixed;*/
 }
 
 .main .experience-cover .title,
 .main .contact-cover .title {
   margin: 0;
-  padding: 200px 0 ;
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -229,13 +235,33 @@ a {
 }
 
 .main .contact-cover {
-	background-image: url(../images/contact.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-  }
+  background-image: url(../images/contact.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
-.main .contact-cover .title .content{
-	background-color: rgba(255, 255, 255, 0.6);
-    padding: 20px 0;
+.main .contact-cover .title .content {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px 0;
+}
+
+.main .contact-cover .content ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 15%;
+}
+
+.main .contact-cover .content ul li {
+  float: left;
+  list-style: none;
+  min-width: 33%;
+}
+
+.main .contact-cover .content i {
+  font-size: 48px;
+  color: rgb(73, 72, 72);
+  line-height: 1.2;
 }
