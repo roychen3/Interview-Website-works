@@ -286,6 +286,10 @@ a {
   margin: 0;
 }
 
+.main .contact-cover .content .contact-list a {
+	color: black;
+}
+
 .main .contact-cover .content .contact-list a:visited {
   color: black;
 }
