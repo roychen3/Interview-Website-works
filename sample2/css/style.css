@@ -170,6 +170,14 @@ a:visited {
   /*background-attachment: fixed;*/
 }
 
+.main .experience-photo .time {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  margin: 10px;
+}
+
 .main .experience-cover .title,
 .main .contact-cover .title {
   margin: 0;
@@ -268,5 +276,30 @@ a:visited {
 }
 
 .main .contact-cover .content .contact-list p {
-	margin: 0;
-  }
+  margin: 0;
+}
+
+.go-top{
+	padding: 0;
+	border: none;
+	border-radius: 20%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.go-top .fa-angle-up {
+  font-size: 48px;
+  padding: 0 9px;
+  color: white;
+}
+
+.go-top .fa-angle-up:hover {
+	background-color: black;
+	border-radius: 20%;
+	cursor: pointer;
+}
+
+
+
