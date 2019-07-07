@@ -124,12 +124,21 @@ a {
   width: 270px;
 }
 
+.main .about #head-shot {
+	width: 270px;
+	height: 333px;
+	background-image: url('../images/head shot.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .main .about .photo .summary {
   color: white;
   background-color: rgb(59, 59, 59);
   padding: 20px;
   margin: -5px 0 0 0;
-  height: 195px;
+  height: 200px;
 }
 
 .main .about .photo .summary .title {
