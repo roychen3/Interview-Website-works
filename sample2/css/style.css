@@ -126,7 +126,7 @@ a {
 
 .main .about #head-shot {
 	width: 270px;
-	height: 333px;
+	height: 331px;
 	background-image: url('../images/head shot.jpg');
 	background-repeat: no-repeat;
     background-size: cover;
@@ -138,7 +138,7 @@ a {
   background-color: rgb(59, 59, 59);
   padding: 20px;
   margin: -5px 0 0 0;
-  height: 200px;
+  height: 210px;
 }
 
 .main .about .photo .summary .title {
