@@ -1,0 +1,152 @@
+/* ------ header ------ */
+.header-inner .menu .dropdown-open {
+  -moz-animation-name: showDropdown; /*FireFox*/
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-name: showDropdown; /*Chrome, Safari*/
+  -webkit-animation-duration: 0.5s;
+  animation-name: showDropdown; /*IE*/
+  animation-duration: 0.5s;
+}
+
+@keyframes showDropdown {
+  from {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  to {
+    transform-origin: top;
+    transform: scaleY(1);
+  }
+}
+@-moz-keyframes showDropdown {
+  from {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  to {
+    transform-origin: top;
+    transform: scaleY(1);
+  }
+}
+@-webkit-keyframes showDropdown {
+  from {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  to {
+    transform-origin: top;
+    transform: scaleY(1);
+  }
+}
+
+.header-inner .menu .dropdown-close {
+  -moz-animation-name: closeDropdown; /*FireFox*/
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-name: closeDropdown; /*Chrome, Safari*/
+  -webkit-animation-duration: 0.5s;
+  animation-name: closeDropdown; /*IE*/
+  animation-duration: 0.5s;
+}
+
+@keyframes closeDropdown {
+  from {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  to {
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+}
+@-moz-keyframes closeDropdown {
+  from {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  to {
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+}
+@-webkit-keyframes closeDropdown {
+  from {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  to {
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+}
+/* ------ header ------ */
+
+/* ------ main ------ */
+.main-inner-5 .white-brand .click-here a {
+  animation: changeColor 1.5s infinite ease-in-out; /*IE*/
+  -moz-animation: changeColor 1.5s infinite ease-in-out; /*FireFox*/
+  -webkit-animation: changeColor 1.5s infinite ease-in-out; /*Chrome, Safari*/
+}
+
+@keyframes changeColor {
+  from {
+    color: white;
+  }
+  to {
+    color: #e53a34;
+  }
+}
+@-moz-keyframes changeColor {
+  from {
+    color: white;
+  }
+  to {
+    color: #e53a34;
+  }
+}
+@-webkit-keyframes changeColor {
+  from {
+    color: white;
+  }
+  to {
+    color: #e53a34;
+  }
+}
+
+/* Add Animation */
+.photoModal-content,
+#caption {
+  -moz-animation-name: zoom;
+  -moz-animation-duration: 0.6s;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-moz-keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* ------ main ------ */

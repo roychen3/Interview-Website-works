@@ -1,0 +1,285 @@
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+    .col-l-40 {
+      width: 40%;
+    }
+    .col-l-45 {
+      width: 45%;
+    }
+  
+    .col-l-50 {
+      width: 50%;
+    }
+  
+    .col-l-55 {
+      width: 55%;
+    }
+  
+    .col-l-20 {
+      width: 20%;
+    }
+  
+    .col-l-80 {
+      width: 80%;
+    }
+  }
+  
+  /* 
+      ##Device = Laptops, Desktops
+      ##Screen = B/w 1025px to 1280px
+  */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .col-40 {
+      width: 40%;
+    }
+  
+    .col-45 {
+      width: 45%;
+    }
+  
+    .col-50 {
+      width: 50%;
+    }
+  
+    .col-55 {
+      width: 55%;
+    }
+  
+    .col-20 {
+      width: 20%;
+    }
+  
+    .col-90 {
+      width: 90%;
+    }
+  }
+  
+  /* 
+      ##Device = Tablets, Ipads (portrait)
+      ##Screen = B/w 768px to 1024px
+  */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .col-s-50 {
+      width: 50%;
+    }
+  
+    .col-s-90 {
+      width: 90%;
+    }
+  
+    .col-s-100 {
+      width: 100%;
+    }
+  
+    .header-inner {
+      padding: 30px 10px;
+    }
+  
+    header .header-cover .title {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+  
+    .main-inner-3 .photo {
+      padding: 0 140px 140px;
+    }
+  
+    .main-inner-4 .column {
+      margin: 0 5%;
+    }
+  }
+  
+  /* 
+      ##Device = Tablets, Ipads (landscape)
+      ##Screen = B/w 768px to 1024px
+  */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  }
+  
+  /* 
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px
+    */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    .col-xs-50 {
+      width: 50%;
+    }
+  
+    .col-xs-100 {
+      width: 100%;
+    }
+  
+    .header-inner {
+      padding: 30px 0;
+    }
+  
+    .header-inner .menu .share {
+      display: block;
+      margin: 0;
+      padding: 21px;
+    }
+  
+    .header-inner .menu .icon {
+      display: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 100;
+      background-color: #191c1c;
+    }
+  
+    .header-inner .menu .icon a {
+      padding: 20px 30px;
+      display: block;
+      margin: 0;
+    }
+  
+    .header-inner .menu .icon a:hover {
+      color: white;
+      background-color: gray;
+    }
+  
+    header .header-cover .title {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+  
+    header .title h1 {
+      font-size: 62px;
+    }
+  
+    header .title h3 {
+      font-size: 14px;
+    }
+  
+    .main-inner-3 .photo {
+      padding: 0 20px 140px;
+    }
+  
+    .main-inner-3 .video .column-title {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    .main-inner-4 .column {
+      margin: 0 5%;
+    }
+  
+    .main-inner-4 .column .article .row {
+      padding: 30px 60px 30px 0;
+    }
+  
+    .main-inner-4 .column .article .row-inner {
+      white-space: normal;
+    }
+  
+    .go-top {
+      right: 5px;
+    }
+  
+    .photoModal{
+      overflow: hidden;
+    }
+  
+    .photoModal-content {
+      width: 100%;
+    }
+  }
+  
+  /* 
+      ##Device = Most of the Smartphones Mobiles (Portrait)
+      ##Screen = B/w 320px to 479px
+  */
+  @media (min-width: 320px) and (max-width: 480px) {
+    .col-xs-100 {
+      width: 100%;
+    }
+  
+    .header-inner {
+      padding: 30px 0;
+    }
+  
+    .header-inner .menu .share {
+      display: block;
+      margin: 0;
+      padding: 21px;
+    }
+  
+    .header-inner .menu .icon {
+      display: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 100;
+      background-color: #191c1c;
+    }
+  
+    .header-inner .menu .icon a {
+      padding: 20px 30px;
+      display: block;
+      margin: 0;
+    }
+  
+    .header-inner .menu .icon a:hover {
+      color: white;
+      background-color: gray;
+    }
+  
+    header .header-cover .title {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+  
+    header .title h1 {
+      font-size: 62px;
+    }
+  
+    header .title h3 {
+      font-size: 14px;
+    }
+  
+    .main-inner-3 .photo {
+      padding: 0 10px 140px;
+    }
+  
+    .main-inner-3 .video .column-title {
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  
+    .main-inner-4 .column {
+      margin: 0 10%;
+    }
+  
+    .main-inner-4 .column .article .row-inner {
+      white-space: normal;
+    }
+  
+    .go-top {
+      right: 5px;
+    }
+  
+    .photoModal {
+      overflow: hidden;
+    }
+  
+    .photoModal-content {
+      width: 100%;
+    }
+  }
+  
