@@ -13,7 +13,6 @@
 		integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 	<!-- icon -->
 
-	<script src="js/index.js"></script>
 	<!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
 	  <![endif]-->
@@ -44,10 +43,10 @@
 			<div class="about clearfix">
 				<div class="about-first col-l-40 col-40 col-s-50 col-xs-50" id="about">
 					<div class="about-inner">
-						<h1>ABOUT</h1>
+						<h1 data-bottom-top="opacity: 0" data-center="opacity: 1">ABOUT</h1>
 						<div class="photo">
 							<!-- <img src="./images/head shot.jpg"> -->
-							<div id="head-shot"></div>
+							<div id="head-shot" data-bottom-top="opacity: 0" data-center="opacity: 1"></div>
 							<div class="summary">
 								陳奎辰 Roy Chen
 								<br>
@@ -60,7 +59,7 @@
 
 				</div>
 				<div class="about-mid col-l-20 col-20 col-s-50 col-xs-50">
-					<p>
+					<p data-bottom-top="opacity: 0" data-center-top="opacity: 1">
 						我熱愛學習實用的程式，來幫助自己用更有效率的方式整理資訊。
 						<br>
 						平常會關注科技、財經和藝術的趨勢，提醒自己這個世界一直在持續進步；
@@ -71,16 +70,16 @@
 					</p>
 				</div>
 				<div class="about-last col-l-40 col-40 col-s-100 col-xs-100" id="skills">
-					<h1>SKILLS</h1>
+					<h1 data-bottom-top="padding-top:100%" data-center-top="padding-top:0">SKILLS</h1>
 					<div class="font-end">
-						<h3>HTML + CSS</h3>
-						<P>
+						<h3 >HTML + CSS</h3>
+						<P >
 							可以不靠bootstrap實作出基本的網頁規格樣式，擁有RWD網頁設計觀念
 						</P>
 					</div>
 					<div class="javascript">
-						<h3>JAVASCRIPT</h3>
-						<P>
+						<h3 >JAVASCRIPT</h3>
+						<P >
 							了解基礎語法、操作 DOM 、物件導向設計觀念。
 							可透過 XMLHttpRequest 或 Promise 實作簡單的非同步處理。
 						</P>
@@ -105,7 +104,7 @@
 					</div>
 
 
-					
+
 				</div>
 			</div>
 			<div class="experience-cover">
@@ -114,9 +113,12 @@
 			<div class="experience">
 				<div class="experience-bkgcl"></div>
 				<div class="experience-card">
-					<div class="experience-photo card-arcoa">
-						<p class="time">2018.1 - today</p>
-						<div class="arcoa">
+					<div class="experience-photo card-arcoa"
+					     data-bottom-top="opacity: 0" data-center-top="opacity: 1">
+						<p class="time"
+						   data-bottom-top="left: -100%;" data-center-top="left: 0%">2018.1 - today</p>
+						<div class="arcoa"
+						     data-bottom-top="right: -100%;" data-center-top="right: 0%;">
 							<h1 class="title">ARCOA</h1>
 							<p class="keyWord">
 								開發工具：C#, SQL Server, Oracle
@@ -131,9 +133,12 @@
 						</div>
 					</div>
 
-					<div class="experience-photo card-college">
-						<p class="time">2017.5 - 2018.1</p>
-						<div class="arcoa">
+					<div class="experience-photo card-college"
+					     data-bottom-top="opacity: 0" data-center-top="opacity: 1">
+						<p class="time" 
+						   data-bottom-top="left: -100%;" data-center-top="left: 0%">2017.5 - 2018.1</p>
+						<div class="arcoa"
+						     data-bottom-top="right: -100%;" data-center-top="right: 0%;">
 							<h1 class="title">畢業專題</h1>
 							<p class="keyWord">
 								開發工具：Python, HTML, CSS, PHP ,Tableau API
@@ -156,15 +161,18 @@
 					<div class="content">
 						<ul class="contact-list clearfix">
 							<li>
-								<i class="material-icons">email</i>
+								<i class="material-icons"
+								   data-bottom-top="font-size: 100px" data--210-bottom="font-size: 48px">email</i>
 								<p>roy850323@gmail.com</p>
 							</li>
 							<li>
-								<i class="fas fa-phone-square"></i>
+								<i class="fas fa-phone-square"
+								data-bottom-top="font-size: 100px" data--210-bottom="font-size: 48px"></i>
 								<P>0987726674</P>
 							</li>
 							<li>
-								<i class="fab fa-github"></i>
+								<i class="fab fa-github"
+								data-bottom-top="font-size: 100px" data--210-bottom="font-size: 48px"></i>
 								<p><a href="https://github.com/roychen3/MyWeb">roychen3</a></p>
 							</li>
 						</ul>
@@ -178,6 +186,9 @@
 	</footer>
 
 	<button class="go-top" id="go-top" onclick="topFunction()"><i class='fas fa-angle-up'></i></button>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+	<script src="js/index.js"></script>
 
 </body>
 

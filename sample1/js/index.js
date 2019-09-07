@@ -7,9 +7,9 @@ function scrollFunction() {
     document.body.scrollTop > 1000 ||
     document.documentElement.scrollTop > 1000
   ) {
-    document.getElementById("go-top").style.display = "block";
+    document.getElementById("go-top").classList.add("show");
   } else {
-    document.getElementById("go-top").style.display = "none";
+    document.getElementById("go-top").classList.remove("show");
   }
 }
 
@@ -18,3 +18,5 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+var s = skrollr.init();

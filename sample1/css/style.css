@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ul,
 li {
   margin: 0;
@@ -291,27 +295,33 @@ a {
   color: black;
 }
 
+/* ------ go top ------ */
 .go-top {
   padding: 0;
   border: none;
   border-radius: 20%;
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
-  bottom: 15px;
+  bottom: -48px;
   right: 15px;
+  transition: 0.5s;
+  z-index: 100;
 }
 
-/* ------ go top ------ */
 .go-top .fa-angle-up {
   font-size: 48px;
   padding: 0 9px;
   color: white;
+  border-radius: 20%;
+  transition: 1s;
 }
 
-.go-top .fa-angle-up:hover {
+.go-top:hover, .fa-angle-up:hover {
   background-color: black;
-  border-radius: 20%;
   cursor: pointer;
+}
+.show {
+  bottom: 15px;
 }
 
 /* 
@@ -333,7 +343,7 @@ a {
 
   .main .about-last {
     height: 696px;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }
 
@@ -356,7 +366,7 @@ a {
 
   .main .about-last {
     height: 696px;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }
 
