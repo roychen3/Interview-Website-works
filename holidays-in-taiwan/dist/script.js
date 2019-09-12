@@ -42,7 +42,7 @@ function getHolidays() {
     let messagModel = document.getElementsByClassName("message-model");
     let message = document.getElementById("message");
 
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState === 4 && this.status === 200) {
       message.innerHTML = "";
       messagModel[0].classList.remove("show");
 
@@ -53,11 +53,11 @@ function getHolidays() {
       allHolidayData = resultDatas.result.records;
       table.innerHTML += filterHoliday(allHolidayData, year);
     } else
-    if (this.readyState == 1) {
+    if (this.readyState === 1) {
       message.innerHTML = "<i class='fas fa-spinner'></i> 載入中";
       messagModel[0].classList.add("show");
     } else
-    if (this.status != 200) {
+    if (this.status !== 200) {
       message.innerHTML = "<i class='fas fa-exclamation-triangle'></i> 伺服器發生問題";
       messagModel[0].classList.add("show");
     }

@@ -223,7 +223,7 @@ function getWeather() {
         let messagModel = document.querySelector(".message-model");
         let message = document.querySelector("#message");
 
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             message.innerHTML = "";
             messagModel.classList.remove("show");
 
@@ -239,11 +239,11 @@ function getWeather() {
             option[0].classList.add("selected");
 
         }
-        else if (this.readyState == 1) {
+        else if (this.readyState === 1) {
             message.innerHTML = "<i class='fas fa-spinner'></i> 載入中";
             messagModel.classList.add("show");
         }
-        else if (this.status != 200) {
+        else if (this.status !== 200) {
             message.innerHTML = "<i class='fas fa-exclamation-triangle'></i> 伺服器發生問題";
             messagModel.classList.add("show");
         }
