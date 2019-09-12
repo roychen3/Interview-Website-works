@@ -1,0 +1,209 @@
+//https://coolors.co/ffffff-00171f-003459-007ea7-00a8e8
+$weather-white: #FFFFFF
+$weather-blue-dark: #00171F
+$weather-blue: #003459
+$weather-blue-light: #007EA7
+$weather-blue-light2: #00A8E8
+$box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5)
+
+*
+  margin: 0
+  font-family: "Raleway", "Noto Sans TC", sans-serif
+  box-sizing: border-box
+
+body
+  color: $weather-blue-dark
+  background-color: $weather-blue-light2
+  letter-spacing: 1px
+
+header
+  color: $weather-white
+  background-color: $weather-blue
+  padding: 40px
+  box-shadow: $box-shadow
+
+.content
+  width: 80%
+  margin: 100px auto 0
+  
+  .select-bar
+    color: $weather-white
+    background-color: $weather-blue-light
+    width: 100px
+    margin-bottom: 20px
+    padding: 10px
+    font-size: 12px
+    position: relative
+    letter-spacing: 1px
+    cursor: pointer
+    
+    p
+      display: inline
+   
+    .fa-caret-down
+      padding-left: 28px
+
+   
+    .select-option
+      position: absolute
+      width: 100%
+      top: 100%
+      left: 0
+      list-style: none
+      padding: 0
+      color: $weather-white
+      background-color: $weather-blue-light
+      height: 300px
+      overflow-y: scroll
+      display: none
+    
+    .show-select-option    
+      display: inline-block
+
+      /* width */
+      &::-webkit-scrollbar 
+          width: 10px
+      
+      /* Track */
+      &::-webkit-scrollbar-track 
+          background: $weather-blue-dark
+      
+      /* Handle */
+      &::-webkit-scrollbar-thumb 
+          background: $weather-white
+      
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover 
+          background: $weather-blue
+
+      .option
+        padding: 10px
+        transition: 0.5s
+
+        &:hover            
+          background-color: $weather-blue
+      
+      .selected
+        background-color: $weather-blue
+    
+    &:hover
+      background-color: $weather-blue
+   
+  .weather
+    background-color: $weather-blue-light
+    border-radius: 10px
+    padding: 30px    
+    box-shadow: $box-shadow
+    margin-bottom: 50px
+   
+    .weather-location
+      color: $weather-white
+      margin-bottom: 20px
+          
+    .weather-card-container
+      display: flex      
+      flex-direction: row        
+            
+      .weather-card        
+        width: 33.333%
+        color: $weather-blue
+        background-color: $weather-white
+        border-radius: 6px
+        padding: 20px
+        margin: 5px 
+        box-shadow: $box-shadow             
+        transition: 0.3s
+      
+        .weather-time
+          font-size: 12px
+          margin-bottom: 10px
+          
+          .start-time
+            display: inline-block
+          .end-time
+            display: inline-block
+        
+        .weather-description
+          font-size: 14px
+        
+        .weather-temperature
+          text-align: center
+          font-size: 26px
+          font-weight: 800
+          margin: 20px 0
+         
+        .rain-probability           
+          font-size: 18px
+
+        &:hover
+          margin: 0 5px 10px  
+    
+.message-model
+  color: $weather-blue-light2
+  background-color: $weather-blue
+  min-width: 140px
+  width: 20%
+  height: 100px
+  border-radius: 10px
+  box-shadow: $box-shadow
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  display: none 
+  
+  #message 
+    text-align: center
+    padding: 10px
+    margin-top: 50px
+    transform: translateY(-50%)
+
+.show 
+  display: initial
+
+.fa-spinner
+  animation-name: loading
+  animation-iteration-count: infinite
+  animation-duration: 0.9s
+  animation-timing-function: linear
+
+@keyframes loading
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+    
+
+
+
+
+$xsmall-devices: 576px  
+$small-devices: 768px
+$medium-devices: 992px
+@media (max-width: $xsmall-devices)
+  header
+    padding: 20px
+   
+  .content  
+    .weather
+      .weather-card-container
+        flex-direction: column
+        .weather-card        
+          width: 100%
+
+            
+@media (min-width: $xsmall-devices) and (max-width: $small-devices)
+  .content  
+    .weather
+      .weather-card-container
+        flex-wrap: wrap
+        .weather-card        
+          width: 47%
+          
+@media (min-width: $small-devices) and (max-width: $medium-devices)
+
+
+@media (min-width: $medium-devices)
+  .content
+    width: 70%
+    
