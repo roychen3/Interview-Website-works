@@ -4,13 +4,15 @@
   "description": "應徵練習題",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "deploy": "gh-pages -d ."
   },
   "author": "RoyChen",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
