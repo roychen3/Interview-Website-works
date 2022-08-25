@@ -2,22 +2,14 @@
   "name": "interview-website-works",
   "version": "1.0.0",
   "description": "某日商公司出的應徵練習題",
-  "main": "index.js",
-  "dependencies": {
-    "gh-pages": "^2.1.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "deploy": "gh-pages -d ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/roychen3/Interview-Website-Works.git"
-  },
   "author": "Roy Chen",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/roychen3/Interview-Website-Works/issues"
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "gh-pages -d src"
   },
-  "homepage": "https://roychen3.github.io/Interview-Website-Works"
+  "homepage": "https://roychen3.github.io/interview-website-works",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
