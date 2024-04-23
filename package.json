@@ -10,6 +10,6 @@
   },
   "homepage": "https://roychen3.github.io/interview-website-works",
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^5.0.0"
   }
 }
